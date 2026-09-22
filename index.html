@@ -3,83 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Contrail+One&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/home.css" rel="stylesheet">
     <link rel="icon" href="/images/kuntotalo-logo-min.png">
-    <title>Kuntotalo karkilampi</title>
-
+    <script src="script.js"></script>
+    <title>RAIN - Gym</title>
 </head>
 <body>
+    <div id="popup" class="popup-background">
+        <div class="popup-wrapper">
+            <p onclick="closePopUp();" class="popup-close">Close</p>
+            <div class="popup">
+                <h2>SIGN UP NOW FOR UP TO 99% OFF!</h2>
+                <p>
+                    You'll also get the latest and best offers exclusive for YOU.
+                </p>
+                <input class="popup-input" placeholder="First Name">
+                <input class="popup-input" placeholder="Email Address">
+                <input onclick="closePopUp();" class="popup-subscribe" type="button" value="SUBSCRIBE NOW">
+            </div>
+        </div>
+    </div>
     <header class="site-header">
-        <img class="site-logo" src="images/kuntotalo-logo.png">
+        <img class="site-logo" src="images/kuntotalo-logo.png" alt="Company logo">
         <nav class="nav-menu">
-            <a>
-                Etusivu
+            <a href="membership/index.html">
+                Pricing
             </a>
             <a>
-                Palvelut
-            </a>
-            <a>
-                Hinnasto
-            </a>
-            <a>
-                Asiakaspalvelu
+                Support
             </a>
         </nav>
     </header>
-   <section class="hero-section">
-        <div class="hero-overlay-vertical"></div>
-        <div class="hero-overlay-horizontal"></div>
-        <img class="hero-image" src="images/kuntotalo-hero-upscaled.jpg">
-        <div class="hero-content">
-            <h2>Tule mukaan liikkumaan monipuolisesti <br /> Karkialammen Kuntotalon liikuntatiloihin.</h2>
-            <a class="hero-button">
-                Liity Kuntosalijäseneksi
-            </a>
-        </div>
-    </section>
-    <section class="content-section">
-        <img class="content-section-image" src="images/kuntotalo-outside.jpg">
-        <div class="content-section-info float_right">
-            <h2>Monipuoliset palvelut</h2>
-            <p class="content-section-text">
-                Mikkelin Kuntotalolla voit tulla liikkumaan yksin tai vaikka koko kaveriporukan kanssa.
-                Meiltä saa varattua vuoroja ympäri vuoden palloilusaliin sekä yleisurheilusuoralle.
-                Lisäksi käytössämme on monipuolinen kuntosali lämmittelylaitteineen.
-            </p>
-            <a class="content-section-link">
-                Lisää tietoa palveluista
-            </a>
-        </div>
-    </section>
-    <section class="content-section">
-        <div class="content-section-info float_left">
-            <h2>Varaa palloilusalivuoro</h2>
-            <p class="content-section-text">
-                Voit varata yritykselle, seuralle tai kaveriporukalle palloilusalivuoron helposti. 
-                Laita sähköpostia kuntotalo(a)surffi.fi tai varaa vuoro nettisivujen kautta. 
-                Palloilusalissa voi pelata salibandyä, lentopalloa, sulkapalloa ja tennistä. 
-                Pelivälineitä voi myös lainata salin varastosta.
-            </p>
-            <a class="content-section-link">
-                Varaa vuoro
-            </a>
-        </div>
-        <img class="content-section-image" src="images/kuntotalo-pallo.jpg">
-    </section>
-    <section class="content-section">
-        <div class="content-section-info float_center">
-            <h2>Liity helposti jäseneksi</h2>
-            <p>
-                Kuntosalijäseneksi liittyminen on vaivatonta. 
-                Ota yhteyttä puhelimitse tai sähköpostilla ja tule noutamaan kulkuoikeus palveluihin MiKV:n toimistolta.
-            </p>
-        </div>
-    </section>
     
+    <section class="hero-section">
+        <img class="hero-image" src="images/dumbells-16-9.jpg" alt="Row of dumbells">
+        <div class="hero-content">
+            <h1>
+                Step into <span class="red">perfection</span>,
+                <br> become part of it.
+            </h1>
+            <p>Your bed won't miss you, but your posture definitely notices...</p>
+
+            <a class="hero-button button outline">
+                Join Now
+            </a>
+        </div>
+    </section>
+    <div class="section-wrapper">
+        <section class="content-section text_left">
+            <div class="content-section-image-wrapper">
+                <img class="content-section-image" src="images/gym.jpg" alt="Indoors of the gym">
+            </div>
+            <div class="content-section-info">
+                <h2>Cancel <span class="red">Anytime</span>. <br> (You Won't).</h2>
+                <p class="content-section-text">
+                    No hidden fees. No hostage contracts.
+                    Just pay us money monthly until you decide failing is more your style.
+                </p>
+                <a class="content-section-link button outline">
+                    Hand Over Your Money
+                </a>
+            </div>
+        </section>
+        <section class="feature-grid">
+            <div class="feature">
+                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 2h11a3 3 0 0 1 3 3v14a1 1 0 0 1-1 1h-3"></path><path d="m5 2l7.588 1.518A3 3 0 0 1 15 6.459V20.78a1 1 0 0 1-1.196.98l-7.196-1.438A2 2 0 0 1 5 18.36zm7 10v2"></path></g></svg>
+                <h3>Open 24/7</h3>
+                <p>
+                    For when that midnight urge to 
+                    <br> 
+                    completely fix your life strikes.
+                </p>
+            </div>
+            <div class="feature">
+                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 3v5M6 3v5m14.5-4v1.5m0 0V7m0-1.5H22M3.5 4v1.5m0 0V7m0-1.5H2m16 0H6m4 0V10m4-4.5V10m4.952 6H5.062m9.194-6h-4.05c-1.007 0-1.38.144-1.934.992l-3.013 4.612c-.186.284-.259.51-.259.854C5 18.611 5.873 19 7.847 19h8.25C18.133 19 19 18.616 19 16.408c0-.306-.057-.51-.204-.773l-2.537-4.53c-.534-.953-.918-1.105-2.003-1.105M16 19v2m-8-2v2"></path></svg>
+                <h3>Top equipment</h3>
+                <p>
+                    Real barbells, smooth cables 
+                    <br>
+                    and weights that actually match the numbers
+                </p>
+            </div>
+            <div class="feature">
+                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" viewBox="0 0 24 24"><path fill="currentColor" d="M12 5c-1.11 0-2 .89-2 2s.89 2 2 2s2-.89 2-2s-.89-2-2-2m10-4v5h-2V4H4v2H2V1h2v2h16V1zm-7 10.26V23h-2v-5h-2v5H9V11.26C6.93 10.17 5.5 8 5.5 5.5V5h2v.5C7.5 8 9.5 10 12 10s4.5-2 4.5-4.5V5h2v.5c0 2.5-1.43 4.67-3.5 5.76"></path></svg>
+                <h3>For EVERYONE</h3>
+                <p>No matter if you're the loud type <br> or the one walking on your <br> phone at the treadmill</p>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="content-section-image-wrapper">
+                <img class="content-section-image" src="images/dumbell-curl-color.jpg" alt="Man curling a dumbell">
+            </div>
+            <div class="content-section-info">
+                <h2>Stop Making <span class="red">Excuses</span>.</h2>
+                <p class="content-section-text">
+                    Every day you wait is another day lost to potential gains.
+                    Rotting in bed is not "Bulking". <span style="font-weight:bold;">Get up!</span>
+                </p>
+                <a class="content-section-link button outline">
+                    Need more convincing?
+                </a>
+            </div>
+
+        </section>
+    </div>
 </body>
+<footer>
+
+</footer>
 </html>

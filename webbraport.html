@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektrapport - Bageri Kanelbullen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <!-- Transparent PNG logo requirement -->
+            <a href="index.html">
+                <img src="images/logo-transparent.png" alt="Bageri Kanelbullen Logotyp" class="site-logo">
+            </a>
+            <h1>Bageri Kanelbullen</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="meny.html">Meny & Galleri</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="rapport.html" class="active">Webbrapport</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="report-container">
+        <article class="report-content">
+            <h1>Projekt- och Webbrapport</h1>
+            <p class="meta-info"><strong>Skapad av:</strong> Anna Andersson & Johan Johansson | <strong>Kurs:</strong> Webbutveckling</p>
+
+            <section>
+                <h2>1. Projektplan & Kundspecifikation</h2>
+                <p><strong>Fiktiv Kund:</strong> Bageri Kanelbullen, ett lokalt hantverksbageri som vill nå ut till yngre fikasugna kunder och erbjuda tydlig information om veckans sortiment.</p>
+                <p><strong>Målgrupp & Syfte:</strong> Målgruppen är lokala invånare i åldern 18–65 år. Syftet med sajten är att visa öppettider, meny, bildgalleri på bakverk samt plats på karta.</p>
+                <p><strong>Responsivitet:</strong> Webbplatsen är optimerad för mobil, tablet och desktop via tre huvudsakliga CSS breakpoints (480px, 768px, 1024px). Sajten stöds inte på smartklockor då skärmytan är för begränsad för menypresentation.</p>
+                <p><strong>Arbetsmetod för kunden:</strong> Vi förklarade för kunden att sajten är statisk (HTML/CSS). Förändringar i text kräver uppdatering i kodbasen, vilket förhindrar att oerfarna användare av misstag förstör layouten.</p>
+                
+                <h3>Karta över webbplatsen (Site Map)</h3>
+                <p>Nedan visas navigationsstrukturen för webbplatsen:</p>
+                <figure class="sitemap-figure">
+                    <img src="images/sitemap.png" alt="Site Map över Bageri Kanelbullen">
+                    <figcaption>Figur 1: Schematiskt diagram över sajtens fyra undersidor och navigering.</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>2. Design, Struktur & Responsivitet</h2>
+                <p>Sajten är uppbyggd enligt <em>Mobile First</em>-principen. Vi har använt flexbox för navigeringsmenyn och CSS Grid för produktkort och bildgalleriet. Färgskalan består av varma, bageri-inspirerade toner (brun `#4A2E2B`, varm beige `#FDF8F5` och kanelorange `#D97724`).</p>
+                <p>Alla sidor delar samma globala CSS-fil (<code>style.css</code>) för ett enhetligt utseende. Pseudoklasser som <code>:hover</code> har använts för alla interaktiva länkar och knappar.</p>
+            </section>
+
+            <section>
+                <h2>3. Media, Animationer & Komponenter</h2>
+                <ul>
+                    <li><strong>Bilder & Media:</strong> Sajten använder responsiva bildkällor med HTML5-taggen <code>&lt;picture&gt;</code> för optimal beskärning på mobil vs dator. Samtliga bilder är komprimerade.</li>
+                    <li><strong>Audio & Video:</strong> En kort presenterande video från bageriet samt en ljudfil med stämningsljud från köket har bäddats in på "Om Oss"-sidan.</li>
+                    <li><strong>Karta:</strong> En interaktiv karta har lagts till via OpenStreetMap iframe för att visa vägen till bageriet.</li>
+                    <li><strong>Animation & Canvas/SVG:</strong> Logotypens kanelbulle-ikon är ritad som en inline SVG. I headern finns en CSS3 keyframe-animation som gör att logotypen snurrar mjukt vid laddning.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Validering</h2>
+                <p>Samtliga HTML5-filer har validerats utan fel via <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Validator</a>. CSS-filen har testats och godkänts via <a href="http://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">W3C CSS Validator</a>.</p>
+            </section>
+
+            <section>
+                <h2>5. Tidsåtgång & Egen Reflektion</h2>
+                <p><strong>Tidsåtgång:</strong> Totalt lade vi ned cirka 28 timmar på projektet (ca 14 timmar per person), fördelat på planering (6h), HTML/CSS-kodning (14h), media/redigering (5h) och rapport/validering (3h).</p>
+                <p><strong>Reflektion:</strong> Det mest utmanande var att få CSS Grid-layouten på galleriet att fungera smidigt på äldre mobiler, medan det roligaste var att arbeta med SVG-grafiken och CSS-animationerna. Vi lärde oss väldigt mycket om vikten av en bra planering innan man börjar koda.</p>
+                <p><strong>Önskemål om extrapoäng:</strong> Vi vill gärna lyfta fram vår responsiva burgarmeny som är byggd helt i ren CSS utan Javascript, samt vår egendesignade SVG-animation i headern.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bageri Kanelbullen. Alla rättigheter förbehållna.</p>
+    </footer>
+
+</body>
+</html>

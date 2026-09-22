@@ -1,0 +1,88 @@
+:root {
+    --outline-width: 1px;
+}
+
+.membership-header {
+    margin: 4em 0 0.5em 0;
+    align-self: center;
+}
+
+.membership-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:0.75em;
+    margin: 0 20vw;
+    position: relative;
+}
+
+.membership-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 0.5em;
+    padding: 1.5em;
+    width:400px;
+    height:700px;
+
+    background-color: var(--card-background);
+    outline: var(--outline-width) solid var(--red);
+    border-radius: 20px;
+}
+
+.membership-container hr {
+    width: 100%;
+}
+
+.membership-container.popular {
+    width:450px;
+    height:750px;
+    outline: calc(var(--outline-width) * 3) var(--red) solid;
+    box-shadow: 0px 0px 1em 0px var(--red);
+}
+
+.membership-label {
+    font-size: 0.8em;
+    position: absolute;
+    top:-0.85em;
+    background-color: var(--red);
+    padding:0.3em 0.75em;
+    border-radius: 5px;
+}
+
+.price-wrapper {
+    display: flex;
+    align-self: flex-start;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.price-wrapper > p {
+    align-self: flex-end;
+    padding-bottom: 4px;
+    font-weight: 200;
+}
+
+.membership-container.popular .price {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.membership-container.popular .price-wrapper > p {
+    padding-bottom: 12px;
+    font-weight: 200;
+}
+
+/* .membership-container:hover {
+    box-shadow: 0px 0px 0.5em 0px var(--red);
+    outline: calc(var(--outline-width) + 1px) var(--red) solid;
+}
+
+.membership-container.popular:hover {
+    box-shadow: 0px 0px 2em 0px var(--red);
+    outline: calc(var(--outline-width) * 3 ) var(--red) solid;
+} */

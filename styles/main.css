@@ -1,0 +1,100 @@
+/* #region ----- GLOBALS ----- */
+
+:root {
+    font-size: 150%;
+    --red: rgb(255, 35, 35);
+    --background-dark: rgb(25, 25, 25);
+    --card-background: rgb(31, 31, 31);
+    --card-radius: 0.3em;
+    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-dark);
+    color: white;
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-wrap: break-word;
+}
+
+.red {
+    color: var(--red);
+}
+
+h1, h2 {
+    font-family: "BBH Bartle", sans-serif;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--card-background);
+    min-height: 5em;
+    /* width: 100%; */
+}
+
+.button {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    background-color: var(--primary-color);
+    transition: transform 0.6 ease;
+}
+
+.button:hover {
+    transform: scale(1.03);
+}
+
+.button.outline {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.button.outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* #endregion */
+
+/* #region ----- NAVBAR ----- */
+
+.site-header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding: 0em 2em;
+    z-index: 3;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.site-logo {
+    width: 10em;
+    cursor: pointer;
+}
+
+/* #endregion */
